@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Student</h1>
+        <h2 id="studentClassDisplay"></h2>
+    </header>
+    <main>
+        <section>
+            <label for="subjectFilter">Filter by Subject:</label>
+            <select id="subjectFilter">
+                <option value="all">All Subjects</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="Social Science">Social Science</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </section>
+        <section id="notesContainer"></section>
+        <button id="requestClassChange">Request Class Change</button>
+    </main>
+    <script src="student.js"></script>
+</body>
+</html>

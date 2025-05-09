@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Upload Page</title>
+    <link rel="stylesheet" href="teacher upload.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Notes</h1>
+        <form id="uploadForm">
+            <label for="standard">Select Standard:</label>
+            <select id="standard" name="standard">
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8rd</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+            </select>
+
+            <label for="title">Title of the Note:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description (optional):</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+
+            <label for="file">Upload Notes:</label>
+            <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+
+            <button type="submit">Upload</button>
+        </form>
+
+        <h2>Uploaded Notes</h2>
+        <ul id="uploadedNotes"></ul>
+
+        <h2>Student Requests</h2>
+        <div id="requestsContainer"></div>
+
+        <a href="home.html"><button class="home">Home</button></a>
+    </div>
+    <script src="teacher.js"></script>
+</body>
+</html>

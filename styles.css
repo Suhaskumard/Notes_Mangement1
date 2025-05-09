@@ -1,0 +1,212 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7fa;
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffe0c2;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Header Styling */
+header {
+    background: #040304;
+    padding: 20px 0;
+}
+
+.navhome {
+    height: 50px;
+}
+
+.navhome ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.homelink {
+    margin: 0 20px;
+}
+
+.homelink a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.homelink a:hover {
+    color: orangered;
+}
+
+.common-page-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.common-page-btn button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.common-page-btn button:hover {
+    background-color: #ed0c0c;
+}
+
+/* Main Section */
+.main {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.uv-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: 40px auto;
+    border: 2px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+    max-width: 500px;
+}
+
+.uv-btn button {
+    background: orangered;
+    color: white;
+    border: 2px solid #333;
+    padding: 15px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.uv-btn button:hover {
+    background: #ed0c0c;
+    transform: scale(1.05);
+}
+
+.button-description {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #040304;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: orangered;
+}
+
+.footer-section p, .footer-section a {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: orangered;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        padding: 50px 20px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .intro {
+        font-size: 18px;
+    }
+
+    .uv-btn {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .uv-btn button {
+        font-size: 16px;
+    }
+
+    .button-description {
+        font-size: 14px;
+    }
+}
